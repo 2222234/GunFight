@@ -1,0 +1,34 @@
+name: GunFight
+version: '${version}'
+main: com.rbc.gunfight.GunFight
+api-version: '1.16'
+author: '2222234'
+softdepend:
+  - Essentials
+commands:
+  gunfight:
+    description: '使用插件'
+    aliases:
+      - gf
+permissions:
+  gunfight.use:
+    description: '控制插件'
+    default: op
+    children:
+      gunfight.edit: true
+      gunfight.game: true
+      gunfight.control: true
+      gunfight.main: true
+  gunfight.edit:
+    description: '编辑地图'
+    default: op
+  gunfight.game:
+    description: '进行游戏'
+    default: op
+  gunfight.control:
+    description: '控制游戏'
+    default: op
+  gunfight.main:
+    description: '主权限'
+    default: op
+
